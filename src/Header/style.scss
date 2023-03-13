@@ -1,8 +1,12 @@
-
+.ff{
+    height: 800vh;
+}
 .bgimg{
-    background-image: url(../../public/hotelimg/pexels-max-rahubovskiy-6527069.jpg);
+    background-image: url(https://images.unsplash.com/photo-1491403865995-cda9c458c314?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODcxNzYxNA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080);
     height: 100vh;
+    background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
    
 }
@@ -11,7 +15,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: azure;
+    color: rgb(255, 255, 255);
     padding: 0 15px;
     .logo{
         font-weight: 600;
@@ -33,9 +37,7 @@
          }
         
     }
-    .btn .a{
-        border: 1px #048282;
-     }
+    
 
 }
 
@@ -48,8 +50,8 @@
     color: azure;
 }
 .brown-bg{
-    background-color: #048282;
-    height: 160vh;
+    background-color: #2B1F21;
+    height: 170vh;
     position: relative;
     z-index: 0;
 }
@@ -57,14 +59,15 @@
     padding: 0 25px;
     position: absolute;
     z-index: 1;
-    top: 38rem;
+    top: 42rem;
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 10px;
+    gap: 20px;
+    left: 50px;
 
     .img{
-        background-attachment: fixed;
-        width: 700px;
+        
+        width: 680px;
         height: 400px;
         object-fit: cover;
         border-radius: 5px;
@@ -89,8 +92,8 @@
     bottom: 0;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
-    background: #000000ac;
-    border-radius: 5px;
+    background: #0000005c;
+    border-radius: 15px;
     cursor: pointer;
 }
 .content{
@@ -104,3 +107,115 @@
 .wraperr:hover .overlay{
     opacity: 0.8;
 }
+
+.img-container{
+    position: relative;
+    height: 300px;
+    width: 50%;
+    padding: 0 40px;
+    
+}
+.image{
+    background-image: url(../../public/hotelimg/pexels-max-rahubovskiy-6585752.jpg);
+   
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 170%;
+    border-radius: .3em;
+    background-position: center center;
+}
+
+
+
+.new-container{
+    position: relative;
+    height: 400px;
+    width: 95%;
+    
+}
+
+
+.photo{
+    background-image: url(../../public/hotelimg/pexels-max-rahubovskiy-6585752.jpg);
+   
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    border-radius: .3em;
+    background-position: center center;
+}
+.photo2{
+    background-image: url(../../public/hotelimg/pexels-jason-jansen-3653831.jpg);
+   
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    border-radius: .3em;
+    background-position: center center;
+}
+.photo3{
+    background-image: url(../../public/hotelimg/pexels-jason-jansen-3653831.jpg);
+   
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: .3em;
+    background-position: center center;
+}
+.photo4{
+    background-image: url(../../public/hotelimg/pexels-jason-jansen-3653831.jpg);
+   
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: .3em;
+    background-position: center center;
+}
+.photo5{
+    background-image: url(../../public/hotelimg/pexels-max-rahubovskiy-6283960.jpg);
+   
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    border-radius: .3em;
+    background-position: center center;
+}.photo6{
+    background-image: url(../../public/hotelimg/pexels-max-rahubovskiy-5997965.jpg);
+   
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    border-radius: .3em;
+    background-position: center center;
+}
+ .photo7{
+    background-image: url(../../public/hotelimg/pexels-jason-jansen-3653831.jpg);
+   
+    width: 680px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    border-radius: .3em;
+    background-position: center center;
+}
+.photo8{
+    background-image: url(../../public/hotelimg/pexels-jason-jansen-3653831.jpg);
+   
+    width: 680px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    border-radius: .3em;
+    background-position: center center;
+} 

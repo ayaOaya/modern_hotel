@@ -1,15 +1,85 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./style.scss";
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Header() {
-  /* const scroll = new LocomotiveScroll(); */
- 
-
- /*  const { scroll } = LocomotiveScroll() */
+  gsap.registerPlugin(ScrollTrigger);
+useEffect(() =>{
+  /* let tl = new gsap.timeline({
+    scrollTrigger: {
+      trigger: ".image",
+      start: "top bottom",
+      end: "+100",
+      scrub: 1
+    }
+  });
+  tl.to('.image', {
+    backgroundSize: "100%"
+  }, .2); */
   
+
+  gsap.to(".image",{
+    backgroundSize: "100%",  scrollTrigger: {
+      trigger: ".image",
+      start: "top bottom",
+      end: "+100",
+      scrub: 1
+    }
+  });
+
+  gsap.to("#one",{
+    backgroundSize: "100%", scrollTrigger: {
+      trigger: ".photo",
+      start: "top bottom",
+      end: "+100",
+      scrub: 1
+    }
+  });
+
+
+   gsap.to("#three",{
+    backgroundSize: "100%", scrollTrigger: {
+      trigger: ".photo3",
+      start: "top bottom",
+      end: "top top",
+      scrub: 1
+    }
+  }) 
+  gsap.to("#lu",{
+    backgroundSize: "100%", scrollTrigger: {
+      trigger: ".photo5",
+      start: "top bottom",
+      end: "+100",
+      scrub: 1
+    }
+  }
+  )
+
+  gsap.to("#special",{
+    backgroundSize: "100%", scrollTrigger: {
+      trigger: ".photo8",
+      start: "top bottom",
+      end: "+100",
+      scrub: 1
+    }
+  }
+  )
+
+ /*  tl.from(".image", {
+    rotation: 'rotation',
+    x: 'positionX',
+    y: 'positionY',
+  
+  }, "-=10") */
+  
+}, [])
+
+
   return (
     <>
+    <div className="ff">
 <div className="bgimg"> 
       <div className="navbar">
         <div className="container">
@@ -42,9 +112,12 @@ export default function Header() {
 
 
       <div className="imgContainer">
+
         <div className="wraperr">
           <div className="each">
-         <a href="/"><img className='img' src="./public\hotelimg\pexels-binyamin-mellish-1396132.jpg" alt="house" /> </a>
+         <a href="/"><div className="new-container">
+          <div id='one' className="photo"></div>
+          </div></a>
          <div className="overlay">
           <div className="content">
             <p>4 Rooms <br /> 3 Bathrooms <br /> 1 Pool</p>
@@ -55,7 +128,9 @@ export default function Header() {
 
         <div className="wraperr">
            <div className="each">
-         <a href="/"><img className='img' src="./public\hotelimg\pexels-binyamin-mellish-1396132.jpg" alt="house" /></a>
+         <a href="/"><div className="new-container">
+          <div id='one' className="photo2"></div>
+          </div></a>
           <div className="overlay">
           <div className="content">
             <p>4 Rooms <br /> 3 Bathrooms <br /> 1 Pool</p>
@@ -66,7 +141,9 @@ export default function Header() {
 
         <div className="wraperr">
            <div className="each">
-         <a href="/"><img className='img' src="./public\hotelimg\pexels-binyamin-mellish-1396132.jpg" alt="house" /></a>
+         <a href="/"><div className="new-container">
+          <div id='three' className="photo3"></div>
+          </div></a>
           <div className="overlay">
           <div className="content">
             <p>4 Rooms <br /> 3 Bathrooms <br /> 1 Pool</p>
@@ -77,7 +154,9 @@ export default function Header() {
 
         <div className="wraperr">
            <div className="each">
-         <a href="/"><img className='img' src="./public\hotelimg\pexels-binyamin-mellish-1396132.jpg" alt="house" /></a>
+         <a href="/"><div className="new-container">
+          <div id='three' className="photo4"></div>
+          </div></a>
           <div className="overlay">
           <div className="content">
             <p>4 Rooms <br /> 3 Bathrooms <br /> 1 Pool</p>
@@ -88,7 +167,9 @@ export default function Header() {
 
         <div className="wraperr">
            <div className="each">
-          <a href="/"><img className='img' src="./public\hotelimg\pexels-binyamin-mellish-1396132.jpg" alt="house" /></a>
+          <a href="/"><div className="new-container">
+          <div id='lu' className="photo5"></div>
+          </div></a>
            <div className="overlay">
           <div className="content">
             <p>4 Rooms <br /> 3 Bathrooms <br /> 1 Pool</p>
@@ -99,7 +180,9 @@ export default function Header() {
 
         <div className="wraperr">
            <div className="each">
-         <a href="/"><img className='img' src="./public\hotelimg\pexels-binyamin-mellish-1396132.jpg" alt="house" /></a>
+         <a href="/"><div className="new-container">
+          <div id='lu' className="photo6"></div>
+          </div></a>
           <div className="overlay">
           <div className="content">
             <p>4 Rooms <br /> 3 Bathrooms <br /> 1 Pool</p>
@@ -108,9 +191,14 @@ export default function Header() {
         </div>
         </div>
 
-        <div className="wraperr">
+
+
+
+
+
+       <div className="wraperr">
            <div className="each">
-        <a href="/"><img className='img' src="./public\hotelimg\pexels-binyamin-mellish-1396132.jpg" alt="house" /></a>
+        <a href="/"><div className="new-container"><div id='special' className='photo7'></div> </div></a>
          <div className="overlay">
           <div className="content">
             <p>4 Rooms <br /> 3 Bathrooms <br /> 1 Pool</p>
@@ -120,10 +208,11 @@ export default function Header() {
         </div>
 
 
-        <div className="wraperr">
+        
+       <div className="wraperr">
            <div className="each">
-          <a href="/"><img className='img' src="./public\hotelimg\pexels-binyamin-mellish-1396132.jpg" alt="house" /></a>
-           <div className="overlay">
+        <a href="/"><div className="new-container"><div id='special'      className='photo8'></div> </div></a>
+         <div className="overlay">
           <div className="content">
             <p>4 Rooms <br /> 3 Bathrooms <br /> 1 Pool</p>
           </div>
@@ -131,10 +220,29 @@ export default function Header() {
         </div>
         </div>
       </div>
-      
+
+{/* <br /><br /><br /><br />
+<br /><br /><br /><br />
+
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<h3 className='h3'>hello </h3>
+
 
 
     
+        <div className="img-container">
+          <div className="image"></div>
+        </div>
+      */}
+
+
+
+
+      
+
+
+        </div>
     </>
   )
 }

@@ -6,7 +6,7 @@ import { useRef } from 'react';
 function App() {
   const containerRef = useRef(null);
   return (
-    <LocomotiveScrollProvider
+   /*  <LocomotiveScrollProvider
   options={
     {
       smooth: true,
@@ -20,13 +20,13 @@ function App() {
   ]}
   containerRef={containerRef}
 >
-  <main data-scroll-container ref={containerRef}>
+  <main data-scroll-container ref={containerRef}> */
   <div className="App">
       <Header />
      
     </div>
-  </main>
-</LocomotiveScrollProvider>
+/*  </main>
+</LocomotiveScrollProvider> */
   )
 }
 
