@@ -2,6 +2,10 @@ import Header from './Header/Header'
 import './App.css'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import { useRef } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Page from './Page/Page';
+
+
 
 function App() {
   const containerRef = useRef(null);
@@ -22,8 +26,11 @@ function App() {
 >
   <main data-scroll-container ref={containerRef}> */
   <div className="App">
-      <Header />
-     
+    <Routes>
+      
+      <Route path="/" element={<Header />} />
+      <Route path="Page" element={<Page />} />
+      </Routes>
     </div>
 /*  </main>
 </LocomotiveScrollProvider> */

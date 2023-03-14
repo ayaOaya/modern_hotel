@@ -115,17 +115,22 @@ useEffect(() =>{
 
         <div className="wraperr">
           <div className="each">
-         <a href="/"><div className="new-container">
+         <a href="/page"><div className="new-container">
           <div id='one' className="photo"></div>
           </div></a>
-         <div className="overlay">
+          <a href="/page"> 
+         <div className="overlay" >
           <div className="content">
             <p>4 Rooms <br /> 3 Bathrooms <br /> 1 Pool</p>
+           
           </div>
          </div>
+         
+         </a>
         </div>
         </div>
 
+      
         <div className="wraperr">
            <div className="each">
          <a href="/"><div className="new-container">
@@ -235,13 +240,6 @@ useEffect(() =>{
           <div className="image"></div>
         </div>
       */}
-
-
-
-
-      
-
-
         </div>
     </>
   )

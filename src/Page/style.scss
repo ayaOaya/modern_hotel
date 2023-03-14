@@ -1,0 +1,73 @@
+.next-page-container{
+    height: 100vh;
+
+.next-page-wrapper{
+    display: grid;
+    grid-template-columns: 75% 25%;
+
+    .next-page-bg{
+        background-image: url(../../public/hotelimg/pexels-max-rahubovskiy-6585770.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .h1{
+            color: #f8f8f8;
+            font-size: 45px;
+            padding-left: 25px;
+            padding-top: 200px;
+        }
+        .p-h1{
+            color: #f8f8f8;
+            font-size: 15px;
+            padding-left: 25px;
+        }
+
+
+    }
+}
+
+
+/* .next-page-hote-contain-wrap{
+    width: 340px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    .hote-bg-img{
+        background-image: url(../../public/hotelimg/pexels-quark-studio-2506990.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        border-radius: 8px;
+    }
+    .next-page-img-h2{
+        font-size: 14px;
+        text-align: center;
+    }
+    .next-page-img-desc{
+        font-size: 10px;
+        text-align: center;
+    }
+} */
+
+.next-page-hote-contain-wrap{
+    width: 270px;
+    height: 246px;
+    padding-left: 60px;
+    padding-top: 10px;
+    .hote-bg-img{
+        background-image: url(../../public/hotelimg/pexels-quark-studio-2506990.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 160px;
+        border-radius: 3px;
+    }
+    .next-page-img-h2{
+        font-size: 12px;
+        text-align: center;
+    }
+    .next-page-img-desc{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+}
